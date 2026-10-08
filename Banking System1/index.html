@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <h2>SecureBank</h2>
+            <ul>
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="#">Accounts</a></li>
+                <li><a href="#">Transactions</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header>
+                <h1>Welcome, Customer</h1>
+                <p>Manage your accounts and view transaction details[cite: 2].</p>
+            </header>
+
+            <!-- Account Summary Card -->
+            <section class="card-section">
+                <div class="balance-card">
+                    <h3>Account Balance</h3>
+                    <p class="balance-amount">$24,580.50</p>
+                    <span class="account-number">Acc ID: #ACC-98421</span>
+                </div>
+
+                <!-- Action Panel (Deposits, Withdrawals, Transfers) -->
+                <div class="action-panel">
+                    <button class="btn deposit">Deposit</button>
+                    <button class="btn withdraw">Withdraw</button>
+                    <button class="btn transfer">Transfer Funds</button>
+                </div>
+            </section>
+
+            <!-- Transaction History Section -->
+            <section class="transaction-section">
+                <h3>Recent Transactions</h3>
+                <table class="transaction-table">
+                    <thead>
+                        <tr>
+                            <th>Transaction ID</th>
+                            <th>Type</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#TXN-1092</td>
+                            <td>Deposit</td>
+                            <td class="positive">+$1,200.00</td>
+                            <td>Oct 8, 2026</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>#TXN-1091</td>
+                            <td>Transfer</td>
+                            <td class="negative">-$450.00</td>
+                            <td>Oct 6, 2026</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>#TXN-1090</td>
+                            <td>Withdrawal</td>
+                            <td class="negative">-$100.00</td>
+                            <td>Oct 4, 2026</td>
+                            <td>Completed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
